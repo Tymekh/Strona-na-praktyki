@@ -9,15 +9,20 @@ body{
 }
 .container{
     width: 2000px;
-    height: 1079px;
-    background-image: url(img/background.png);
+    /* background-image: url(http://localhost/wordpress/wp-content/uploads/2025/04/client_background.png); */
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
 }
+#slider{
+    background-image: url(img/slider_background.png);
+    height: 800px;
+}
 header{ 
+    position: sticky;
+    top: 0px;
     width: 980px;
-    height: 0px;
+    height: 70px;
     margin-left: 24%;
     margin-top: 50px;
     font-size: 150%;
@@ -73,4 +78,42 @@ header{
 }
 .invert{
     filter: invert(100);
+}
+#services{
+    height: 500px;
+    background-color: white;
+}
+#newsleter{
+    height: 250px;
+    background-image: url(img/newsletter_background.png);
+}
+#works{
+    height: 1300px;
+    background-color: white;
+}
+#client{
+    height: 500px;
+    background-image: url(img/client_background.png);
+}
+#team{
+    height: 1000px;
+    background-color: white;
+}
+#contact{
+    height: 800px;
+    background-image: url(img/contact_background.png);
+}
+footer{
+    height: 100px;
+    background-color: #3b434c;
+}
+
+#flex_container{
+    display: flex;
+    flex-direction: row;
+}
+.service img{
+    width: 150px;
+    border: gray 1px solid;
+
 }
