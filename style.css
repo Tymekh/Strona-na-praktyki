@@ -396,6 +396,90 @@ header{
     height: 800px;
     background-image: url(img/contact_background.png);
 }
+#contact_title{
+    margin: 0 auto;
+    width: fit-content;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#contact_title_title{
+    font-size: 35px;
+    line-height: 35px;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+#contact_title_text{
+    font-size: 16.5px;
+    line-height: 1.8;
+    font-weight: 350;
+}
+#contact_form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 0 auto;
+    width: fit-content;
+}
+#contact_form input::placeholder{
+
+    color: #3B434C;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+#contact_form_first_row{
+    display: flex;
+    gap: 30px;
+
+}
+#contact_form input{
+    width: 380px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    padding: 0 0 0 20px;
+}
+#contact_form_message{
+    width: 830px;
+    height: 200px;
+    border: none;
+    border-radius: 10px;
+    padding: 0;
+    resize: none;
+}
+#contact_form_message::placeholder{
+    color: #3B434C;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
+    padding-left: 20px;
+    padding-top: 10px;
+    letter-spacing: -0.5px;
+    word-spacing: -5px;
+}
+#contact_form_button{
+    background-color: #f7600e;
+    border-radius: 10px;
+    height: 50px;
+    width: 200px;
+    border: none;
+    color: white;
+}
+#contact_form_third_row{
+    display: flex;
+    /* gap: 320px; */
+    justify-content: space-between;
+}
+#contact_from_social_media{
+    display: flex;
+    gap: 20px;
+    width: fit-content;
+}
+#contact_from_social_media img{
+    width: 42px;
+    height: 42px;
+}
 footer{
     height: 100px;
     background-color: #3b434c;
