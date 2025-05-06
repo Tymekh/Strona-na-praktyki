@@ -19,6 +19,6 @@
             </p>
             <p id="header_menu">
                 Menu &nbsp;&nbsp;
-                <img class="invert" src="/img/hamburger.png" alt="hamburger">
+                <img class="invert" src="<?php echo get_template_directory_uri(); ?>//img/hamburger.png" alt="hamburger">
             </p>
         </header>
