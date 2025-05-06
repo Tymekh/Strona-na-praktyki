@@ -21,23 +21,28 @@ header{
     justify-content: space-between;
     flex-direction: row;
     top: 0px;
-    width: 980px;
+    width: 1100px;
     /* height: 70px; */
     /* margin-left: 460px;
     margin-top: 50px; */
     font-size: 150%;
     /* margin-bottom: 0px; */
     margin: 50px auto 0 auto;
-    left: calc((100% - 980px) / 2);
+    left: calc((100% - 1100px) / 2);
 }
 #header_title{
     margin: 0;
-    font-size: 21px;
+    font-size: 23px;
 }
 #header_menu{
     display: flex;
     margin: 0;
-    font-size: 18px;
+    font-size: 16px;
+}
+#header_menu img{
+    padding-top: 2px;
+    width: 30px;
+    height: 20px;
 }
 #slider{
     /* background-image: url(http://localhost/wordpress/wp-content/uploads/2025/04/client_background.png); */
@@ -69,7 +74,7 @@ header{
     font-weight: 550;
 }
 #slider_subtext{
-    font-size: 23px;
+    font-size: 24.5px;
     margin-bottom: 50px;
     margin-top: 15px;
 }
@@ -182,7 +187,7 @@ header{
 #newsletter_input{
     margin-right: 30px;
     width: 535px;
-    font-size: 14px;
+    font-size: 15px;
     font-family: 'open sans', sans-serif;
     text-align: left;
     padding-left: 25px;
@@ -289,7 +294,8 @@ header{
     margin-left: calc(50% - 105px);
     margin-right: auto;
     background-color: white;
-    font-size: 15px;
+    font-size: 16px;
+    font-weight: 500;
 }
 #client{
     height: 500px;
@@ -465,7 +471,7 @@ header{
     width: fit-content;
     text-align: center;
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 95px;
 }
 #contact_title_title{
     font-size: 35px;
@@ -526,7 +532,7 @@ header{
     background-color: #f7600e;
     border-radius: 10px;
     height: 50px;
-    width: 200px;
+    width: 210px;
     border: none;
     color: white;
 }
