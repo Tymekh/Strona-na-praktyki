@@ -2,14 +2,8 @@
 Theme Name: Praktyki
 Author: Tymoteusz Dombrowski
 Description: A custom WordPress theme based on the Tanatos Studio design.
-Version: 1.0
+Version: 1.1
 */
-.side{
-    width: calc((100% - 2000px) / 2);
-    background-color: green;
-    height: 10000px;
-    float: left;
-}
 body{
     margin: 0;  
     color: white;
@@ -23,32 +17,38 @@ body{
     filter: invert(100);
 }
 .container{
-    width: 2000px;
-    margin-left: auto;
-    margin-right: auto;
+    /* width: 2000px; */
+    margin: 0 auto;
     overflow: hidden;
-    float: left;
 }
 header{ 
     position: absolute;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
     top: 0px;
-    width: 980px;
-    height: 70px;
-    margin-left: 460px;
-    margin-top: 50px;
+    width: 1100px;
+    /* height: 70px; */
+    /* margin-left: 460px;
+    margin-top: 50px; */
     font-size: 150%;
-    margin-bottom: 0px;
+    /* margin-bottom: 0px; */
+    margin: 50px auto 0 auto;
+    left: calc((100% - 1100px) / 2);
 }
 #header_title{
-    float: left;
     margin: 0;
-    font-size: 21px;
+    font-size: 23px;
 }
 #header_menu{
-    float: right;
     display: flex;
     margin: 0;
-    font-size: 18px;
+    font-size: 16px;
+}
+#header_menu img{
+    padding-top: 2px;
+    width: 30px;
+    height: 20px;
 }
 #slider{
     /* background-image: url(http://localhost/wordpress/wp-content/uploads/2025/04/client_background.png); */
@@ -80,17 +80,24 @@ header{
     font-weight: 550;
 }
 #slider_subtext{
-    font-size: 23px;
+    font-size: 24.5px;
     margin-bottom: 50px;
     margin-top: 15px;
 }
+#button_container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
 .slider_button{
+    width: 210px;
+    height: 50px;
     border-radius: 10px;
     background-color: transparent;
-    border: none;
+    border: 1px solid #656A6F;
     color: white;
-    padding: 18px 70px 18px 70px;
-    font-size: medium;
+    /* padding: 18px 70px 18px 70px; */
+    font-size: 15px;
 }
 .slider_button:hover{
     background-color: #f7600e;
@@ -172,7 +179,9 @@ header{
     z-index: -1;
 }
 #newsletter_container{
-    margin-left: 570px;
+    /* margin-left: 570px; */
+    margin: 0 auto;
+    width: fit-content;
     padding-top: 100px;
 
 }
@@ -184,7 +193,7 @@ header{
 #newsletter_input{
     margin-right: 30px;
     width: 535px;
-    font-size: 14px;
+    font-size: 15px;
     font-family: 'open sans', sans-serif;
     text-align: left;
     padding-left: 25px;
@@ -291,15 +300,12 @@ header{
     margin-left: calc(50% - 105px);
     margin-right: auto;
     background-color: white;
-    font-size: 15px;
+    font-size: 16px;
+    font-weight: 500;
 }
 #client{
     height: 500px;
     position: relative;
-    display: flex;
-    flex-direction: row;
-    padding: 0 340px;
-    gap: 240px;
 }
 #client::before {
     content: '';
@@ -315,7 +321,14 @@ header{
     z-index: -1;
 }
 #client_container{
-    width: 800px;
+    display: flex;
+    flex-direction: row;
+    gap: 240px;
+    margin: 0 auto;
+    width: fit-content
+}
+#client_text_container{
+    width: fit-content;
     text-align: center;
     padding-top: 100px;
     display: flex;
@@ -464,7 +477,7 @@ header{
     width: fit-content;
     text-align: center;
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 95px;
 }
 #contact_title_title{
     font-size: 35px;
@@ -525,7 +538,7 @@ header{
     background-color: #f7600e;
     border-radius: 10px;
     height: 50px;
-    width: 200px;
+    width: 210px;
     border: none;
     color: white;
 }
