@@ -9,7 +9,7 @@
                 <button class="slider_button">HIRE US</button>
                 <button class="slider_button">OUR WORKS</button>
             </div>
-            <img id="slider_button_more" class="invert" src="/img/circle_bottom.png" alt="button">
+            <img id="slider_button_more" class="invert" src="<?php echo get_template_directory_uri(); ?>/img/circle_bottom.png" alt="button">
         </div>
     </div>
 
@@ -18,7 +18,7 @@
         <div id="services_flex_container">
             <div class="service">
                 <div class="service_logo">
-                    <img src="/img/printer_logo.png" alt="printer logo">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/printer_logo.png" alt="printer logo">
                 </div>
                 <div class="service_text">
                     <div class="service_text_title">PRINT DESIGN</div>
@@ -27,7 +27,7 @@
             </div>
             <div class="service">
                 <div class="service_logo">
-                    <img src="/img/web_design_logo.png" alt="web logo">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/web_design_logo.png" alt="web logo">
                 </div>
                 <div class="service_text">
                     <div class="service_text_title">PRINT DESIGN</div>
@@ -36,7 +36,7 @@
             </div>
             <div class="service">
                 <div class="service_logo">
-                    <img src="/img/app_logo.png" alt="app logo">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/app_logo.png" alt="app logo">
                 </div>
                 <div class="service_text">
                     <div class="service_text_title">PRINT DESIGN</div>
@@ -45,7 +45,7 @@
             </div>
             <div class="service">
                 <div class="service_logo">
-                    <img src="/img/design_logo.png" alt="design logo">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/design_logo.png" alt="design logo">
                 </div>
                 <div class="service_text">
                     <div class="service_text_title">PRINT DESIGN</div>
@@ -76,7 +76,7 @@
                     <p class="work_item_text">Quis nostrud exercitation ullamco<br> laboris nisi ut aliquip ex ea commodo</p>
                     <button class="work_item_button">SHOW PROJECT</button>
                 </div>
-                <img src="/img/our_works1.png" alt="work1">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/our_works1.png" alt="work1">
             </div>
             <div class="work">
                 <div class="work_item_container">
@@ -84,7 +84,7 @@
                     <p class="work_item_text">Quis nostrud exercitation ullamco<br> laboris nisi ut aliquip ex ea commodo</p>
                     <button class="work_item_button">SHOW PROJECT</button>
                 </div>
-                <img src="/img/our_works2.png" alt="work2">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/our_works2.png" alt="work2">
             </div>
             <div class="work">
                 <div class="work_item_container">
@@ -92,7 +92,7 @@
                     <p class="work_item_text">Quis nostrud exercitation ullamco<br> laboris nisi ut aliquip ex ea commodo</p>
                     <button class="work_item_button">SHOW PROJECT</button>
                 </div>
-                <img src="/img/our_works3.png" alt="work3">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/our_works3.png" alt="work3">
             </div>
             <div class="work">
                 <div class="work_item_container">
@@ -100,7 +100,7 @@
                     <p class="work_item_text">Quis nostrud exercitation ullamco<br> laboris nisi ut aliquip ex ea commodo</p>
                     <button class="work_item_button">SHOW PROJECT</button>
                 </div>
-                <img src="/img/our_works4.png" alt="work4">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/our_works4.png" alt="work4">
             </div>
             <div class="work">
                 <div class="work_item_container">
@@ -108,7 +108,7 @@
                     <p class="work_item_text">Quis nostrud exercitation ullamco<br> laboris nisi ut aliquip ex ea commodo</p>
                     <button class="work_item_button">SHOW PROJECT</button>
                 </div>
-                <img src="/img/our_works5.png" alt="work5">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/our_works5.png" alt="work5">
             </div>
             <div class="work">
                 <div class="work_item_container">
@@ -116,7 +116,7 @@
                     <p class="work_item_text">Quis nostrud exercitation ullamco<br> laboris nisi ut aliquip ex ea commodo</p>
                     <button class="work_item_button">SHOW PROJECT</button>
                 </div>
-                <img src="/img/our_works6.png" alt="work6">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/our_works6.png" alt="work6">
             </div>
         </div>
         <button id="works_button">SHOW MORE</button>
