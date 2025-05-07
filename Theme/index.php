@@ -1,19 +1,19 @@
 <?php get_header(); ?>
+<!-- -----------------------------------------MAIN----------------------------------------- -->
 <main>
-    <!-- SLIDER -->
+    <!-- -----------------------------------------SLIDER----------------------------------------- -->
     <div id="slider">
         <div id="slider_title">
             <p id="slider_text"><b>WE DESIGN <span class="orange">THINGS</span></b></p>
             <p id="slider_subtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit, <br>sed do eiusmod tempor incidunt ut labore et dolore magna aliqua</p>
             <div id="button_container">
-                <button class="slider_button">HIRE US</button>
+                <button class="slider_button" onclick="openHire_us()">HIRE US</button>
                 <button class="slider_button">OUR WORKS</button>
             </div>
             <img id="slider_button_more" class="invert" src="<?php echo get_template_directory_uri(); ?>/img/circle_bottom.png" alt="button">
         </div>
     </div>
-
-    <!-- SERVICES -->
+    <!-- -----------------------------------------SERVICES----------------------------------------- -->
     <div id="services">
         <div id="services_flex_container">
             <div class="service">
@@ -21,53 +21,72 @@
                     <img src="<?php echo get_template_directory_uri(); ?>/img/printer_logo.png" alt="printer logo">
                 </div>
                 <div class="service_text">
-                    <div class="service_text_title">PRINT DESIGN</div>
-                    <div class="service_text_text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</div>
+                    <div class="service_text_title">
+                        PRINT DESIGN
+                    </div>
+                    <div class="service_text_text">
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    </div>
                 </div>
             </div>
             <div class="service">
                 <div class="service_logo">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/web_design_logo.png" alt="web logo">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/web_design_logo.png" alt="printer logo">
                 </div>
                 <div class="service_text">
-                    <div class="service_text_title">PRINT DESIGN</div>
-                    <div class="service_text_text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</div>
+                    <div class="service_text_title">
+                        WEB DESIGN
+                    </div>
+                    <div class="service_text_text">
+                        Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                    </div>
                 </div>
             </div>
             <div class="service">
                 <div class="service_logo">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/app_logo.png" alt="app logo">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/app_logo.png" alt="printer logo">
                 </div>
                 <div class="service_text">
-                    <div class="service_text_title">PRINT DESIGN</div>
-                    <div class="service_text_text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</div>
+                    <div class="service_text_title">
+                        APP DESIGN
+                    </div>
+                    <div class="service_text_text">
+                        Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    </div>
                 </div>
             </div>
             <div class="service">
                 <div class="service_logo">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/design_logo.png" alt="design logo">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/design_logo.png" alt="printer logo">
                 </div>
                 <div class="service_text">
-                    <div class="service_text_title">PRINT DESIGN</div>
-                    <div class="service_text_text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</div>
+                    <div class="service_text_title">
+                        LOGO DESIGN
+                    </div>
+                    <div class="service_text_text">
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    </div>
                 </div>
             </div>
-        </div>
+        </div>    
     </div>
-
-    <!-- NEWSLETTER -->
+    <!-- -----------------------------------------NEWSLETER----------------------------------------- -->
     <div id="newsletter">
         <div id="newsletter_container">
-            <input type="text" placeholder="Enter Your email address for newsletter" id="newsletter_input">
+            <input type="text" placeholder="Enter Your email adress for newsletter" id="newsletter_input">
             <input type="button" value="SUBSCRIBE" id="newsletter_button">
         </div>
     </div>
-
-    <!-- WORKS -->
+    <!-- -----------------------------------------WORKS----------------------------------------- -->
     <div id="works">
         <div id="works_title">
-            <div id="works_title_title">OUR <span class="orange">WORKS</span></div>
-            <div id="works_title_text">Ut enim ad minim veniam, Quis nostrud exercitation ullamco<br> laboris nisi ut aliquip ex ea commodo consequat</div>
+            <div id="works_title_title">
+                OUR <span class="orange">WORKS</span>
+            </div>
+            <div id="works_title_text">
+                Ut enim ad minim veniam, Quis nostrud exercitation ullamco<br> laboris nisi ut aliquip ex ea commodo consequat
+            </div>
+
         </div>
         <div id="works_container">
             <div class="work">
@@ -121,7 +140,7 @@
         </div>
         <button id="works_button">SHOW MORE</button>
     </div>
-    <!-- CLIENT -->
+    <!-- -----------------------------------------CLIENT----------------------------------------- -->
     <div id="client">
         <div id="client_container"> 
             <div id="client_left_arrow">
@@ -139,7 +158,7 @@
             </div>
         </div>
     </div>
-<!-- TEAM -->
+    <!-- -----------------------------------------TEAM----------------------------------------- -->
     <div id="team">
         <div id="team_title">
             <p id="team_title_title">OUR <span class="orange">TEAM</span></p>
@@ -154,9 +173,9 @@
                 </div> 
                 <p class="team_member_name">CATHERINA GAIL</p>
                 <div class="team_member_social_media">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/facebook_logo.png" alt="facebook_logo">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/twitter_logo.png" alt="twitter_logo">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/gmail_logo.png" alt="gmail_logo">
+                    <a href="https://facebook.com"><img src="<?php echo get_template_directory_uri(); ?>/img/facebook_logo.png" alt="facebook_logo"></a>
+                    <a href="https://twitter.com"><img src="<?php echo get_template_directory_uri(); ?>/img/twitter_logo.png" alt="twitter_logo"></a>
+                    <a href="mailto:example@gmail.com"><img src="<?php echo get_template_directory_uri(); ?>/img/gmail_logo.png" alt="gmail_logo"></a>
                 </div>
                 <p class="team_member_text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>        
             </div>
@@ -168,9 +187,9 @@
                 </div>
                 <p class="team_member_name">HARVEY RUBE</p>
                 <div class="team_member_social_media">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/facebook_logo.png" alt="facebook_logo">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/twitter_logo.png" alt="twitter_logo">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/gmail_logo.png" alt="gmail_logo">
+                    <a href="https://facebook.com"><img src="<?php echo get_template_directory_uri(); ?>/img/facebook_logo.png" alt="facebook_logo"></a>
+                    <a href="https://twitter.com"><img src="<?php echo get_template_directory_uri(); ?>/img/twitter_logo.png" alt="twitter_logo"></a>
+                    <a href="mailto:example@gmail.com"><img src="<?php echo get_template_directory_uri(); ?>/img/gmail_logo.png" alt="gmail_logo"></a>
                 </div>
                 <p class="team_member_text">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut</p>
             </div>
@@ -182,9 +201,9 @@
                 </div>
                 <p class="team_member_name">JANET PRIS</p>
                 <div class="team_member_social_media">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/facebook_logo.png" alt="facebook_logo">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/twitter_logo.png" alt="twitter_logo">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/gmail_logo.png" alt="gmail_logo">
+                    <a href="https://facebook.com"><img src="<?php echo get_template_directory_uri(); ?>/img/facebook_logo.png" alt="facebook_logo"></a>
+                    <a href="https://twitter.com"><img src="<?php echo get_template_directory_uri(); ?>/img/twitter_logo.png" alt="twitter_logo"></a>
+                    <a href="mailto:example@gmail.com"><img src="<?php echo get_template_directory_uri(); ?>/img/gmail_logo.png" alt="gmail_logo"></a>
                 </div>
                 <p class="team_member_text">Commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</p>
             </div>
@@ -196,9 +215,9 @@
                 </div>
                 <p class="team_member_name">KEVIN WARD</p>
                 <div class="team_member_social_media">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/facebook_logo.png" alt="facebook_logo">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/twitter_logo.png" alt="twitter_logo">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/gmail_logo.png" alt="gmail_logo">
+                    <a href="https://facebook.com"><img src="<?php echo get_template_directory_uri(); ?>/img/facebook_logo.png" alt="facebook_logo"></a>
+                    <a href="https://twitter.com"><img src="<?php echo get_template_directory_uri(); ?>/img/twitter_logo.png" alt="twitter_logo"></a>
+                    <a href="mailto:example@gmail.com"><img src="<?php echo get_template_directory_uri(); ?>/img/gmail_logo.png" alt="gmail_logo"></a>
                 </div>
                 <p class="team_member_text">Velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</p>
             </div>
@@ -209,7 +228,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/bullets.png" alt="bullets">
         </div>
     </div>
-<!-- CONTACT -->
+    <!-- -----------------------------------------CONTACT----------------------------------------- -->
     <div id="contact">
         <div id="contact_title">
             <p id="contact_title_title">SAY <span class="orange">HELLO</span></p>
@@ -226,11 +245,11 @@
             <div id="contact_form_third_row">
                 <button type="submit" id="contact_form_button">HIRE US</button>
                 <div id="contact_from_social_media">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/facebook_logo.png" alt="facebook_logo">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/twitter_logo.png" alt="twitter_logo">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/gmail_logo.png" alt="gmail_logo">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/dribbble_logo.png" alt="dribble_logo">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/behance_logo.png" alt="behance_logo">
+                    <a href="https://facebook.com"><img src="<?php echo get_template_directory_uri(); ?>/img/facebook_logo.png" alt="facebook_logo"></a>
+                    <a href="https://twitter.com"><img src="<?php echo get_template_directory_uri(); ?>/img/twitter_logo.png" alt="twitter_logo"></a>
+                    <a href="mailto:example@gmail.com"><img src="<?php echo get_template_directory_uri(); ?>/img/gmail_logo.png" alt="gmail_logo"></a>
+                    <a href="https://dribbble.com"><img src="<?php echo get_template_directory_uri(); ?>/img/dribbble_logo.png" alt="dribble_logo"></a>
+                    <a href="https://behance.net"><img src="<?php echo get_template_directory_uri(); ?>/img/behance_logo.png" alt="behance_logo"></a>
                 </div>
             </div>
         </form>

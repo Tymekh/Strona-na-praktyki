@@ -6,16 +6,70 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <title>Strona</title>
+    <meta name="description" content="Strona na praktyki, odtworzony projekt strony: https://symu.co/freebies/templates-4/tanatos-psd-template/">
+    <meta name="author" content="Tymoteusz Dombrowski">
 </head>
+<script>
+    function openMenu() {
+        document.getElementById("menu").style.visibility = "visible";
+        console.log("openMenu()");
+    }
+    function closeMenu() {
+        document.getElementById("menu").style.visibility = "collapse";
+        console.log("closeMenu()");
+    }
+    function openHire_us() {
+        document.getElementById("hire_us").style.visibility = "visible";
+        console.log("openHire_us()");
+    }
+    function closeHire_us() {
+        document.getElementById("hire_us").style.visibility = "collapse";
+        console.log("closeHire_us()");
+   }
+</script>
 <body>
     <div class="container">
+        <div id="menu" onclick="closeMenu()">
+            <div id="menu_content"">
+                <div id="menu_canncel">
+                    <img src="img/cancel.png" alt="cancel" class="invert" onclick="closeMenu()">
+                </div>
+                <div id="menu_items">
+                    <a href="#slider" class="menu_item">HOME</a>
+                    <a href="#team" class="menu_item">ABOUT US</a>
+                    <a href="#services" class="menu_item">SERVICES</a>
+                    <a href="#works" class="menu_item">OUR WORKS</a>
+                    <a href="#contact" class="menu_item">CONTACT</a>
+                    <img src="img/orange_bar.png" alt="bar" id="menu_items_bar">
+                    <div id="menu_social_media">
+                        <a href="https://facebook.com"><img src="img/facebook_logo.png" alt="facebook_logo"></a>
+                        <a href="https://twitter.com"><img src="img/twitter_logo.png" alt="twitter_logo"></a>
+                        <a href="mailto:example@gmail.com"><img src="img/gmail_logo.png" alt="gmail_logo"></a>
+                        <a href="https://dribbble.com"><img src="img/dribbble_logo.png" alt="dribble_logo"></a>
+                        <a href="https://behance.net"><img src="img/behance_logo.png" alt="behance_logo"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="hire_us"">
+            <div id="hire_us_container"">
+                <div id="hire_us_cancel" onclick="closeHire_us()">X</div>
+                <div id="hire_us_flex">
+                    <p id="hire_us_title">HIRE <span class="orange">US</span></p>
+                    <p id="hire_us_text">Excepteur sint occaecat cupidatat non proident, sunt in culpa <br>qui officia deserunt mollit anim id est laborum</p>
+                    <input type="text" placeholder="Your Email" id="hire_us_email">
+                    <input type="text " placeholder="Subject" id="hire_us_subject">
+                    <textarea placeholder="Your Message" id="hire_us_message"></textarea>
+                    <input type="submit" id="hire_us_button" value="SEND MESSAGE">
+                </div>
+            </div>
+        </div>
         <header>
             <p id="header_title">
                 Tanatos<b><span class="orange">Studio</span></b>
             </p>
-            <p id="header_menu">
+            <p id="header_menu" onclick="openMenu()">
                 Menu &nbsp;&nbsp;
                 <img class="invert" src="img/hamburger.png" alt="hamburger">
             </p>
@@ -28,7 +82,7 @@
                     <p id="slider_text"><b>WE DESIGN <span class="orange">THINGS</span></b></p>
                     <p id="slider_subtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit, <br>sed do eiusmod tempor incidunt ut labore et dolore magna aliqua</p>
                     <div id="button_container">
-                        <button class="slider_button">HIRE US</button>
+                        <button class="slider_button" onclick="openHire_us()">HIRE US</button>
                         <button class="slider_button">OUR WORKS</button>
                     </div>
                     <img id="slider_button_more" class="invert" src="img/circle_bottom.png" alt="button">
@@ -91,14 +145,14 @@
                     </div>
                 </div>    
             </div>
-<!-- -----------------------------------------NEWSLETER----------------------------------------- -->
+            <!-- -----------------------------------------NEWSLETER----------------------------------------- -->
             <div id="newsletter">
                 <div id="newsletter_container">
                     <input type="text" placeholder="Enter Your email adress for newsletter" id="newsletter_input">
                     <input type="button" value="SUBSCRIBE" id="newsletter_button">
                 </div>
             </div>
-<!-- -----------------------------------------WORKS----------------------------------------- -->
+            <!-- -----------------------------------------WORKS----------------------------------------- -->
             <div id="works">
                 <div id="works_title">
                     <div id="works_title_title">
@@ -161,7 +215,7 @@
                 </div>
                 <button id="works_button">SHOW MORE</button>
             </div>
-<!-- -----------------------------------------CLIENT----------------------------------------- -->
+            <!-- -----------------------------------------CLIENT----------------------------------------- -->
             <div id="client">
                 <div id="client_container"> 
                     <div id="client_left_arrow">
@@ -179,7 +233,7 @@
                     </div>
                 </div>
             </div>
-<!-- -----------------------------------------TEAM----------------------------------------- -->
+            <!-- -----------------------------------------TEAM----------------------------------------- -->
             <div id="team">
                 <div id="team_title">
                     <p id="team_title_title">OUR <span class="orange">TEAM</span></p>
@@ -194,9 +248,9 @@
                         </div> 
                         <p class="team_member_name">CATHERINA GAIL</p>
                         <div class="team_member_social_media">
-                            <img src="img/facebook_logo.png" alt="facebook_logo">
-                            <img src="img/twitter_logo.png" alt="twitter_logo">
-                            <img src="img/gmail_logo.png" alt="gmail_logo">
+                            <a href="https://facebook.com"><img src="img/facebook_logo.png" alt="facebook_logo"></a>
+                            <a href="https://twitter.com"><img src="img/twitter_logo.png" alt="twitter_logo"></a>
+                            <a href="mailto:example@gmail.com"><img src="img/gmail_logo.png" alt="gmail_logo"></a>
                         </div>
                         <p class="team_member_text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>        
                     </div>
@@ -208,9 +262,9 @@
                         </div>
                         <p class="team_member_name">HARVEY RUBE</p>
                         <div class="team_member_social_media">
-                            <img src="img/facebook_logo.png" alt="facebook_logo">
-                            <img src="img/twitter_logo.png" alt="twitter_logo">
-                            <img src="img/gmail_logo.png" alt="gmail_logo">
+                            <a href="https://facebook.com"><img src="img/facebook_logo.png" alt="facebook_logo"></a>
+                            <a href="https://twitter.com"><img src="img/twitter_logo.png" alt="twitter_logo"></a>
+                            <a href="mailto:example@gmail.com"><img src="img/gmail_logo.png" alt="gmail_logo"></a>
                         </div>
                         <p class="team_member_text">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut</p>
                     </div>
@@ -222,9 +276,9 @@
                         </div>
                         <p class="team_member_name">JANET PRIS</p>
                         <div class="team_member_social_media">
-                            <img src="img/facebook_logo.png" alt="facebook_logo">
-                            <img src="img/twitter_logo.png" alt="twitter_logo">
-                            <img src="img/gmail_logo.png" alt="gmail_logo">
+                            <a href="https://facebook.com"><img src="img/facebook_logo.png" alt="facebook_logo"></a>
+                            <a href="https://twitter.com"><img src="img/twitter_logo.png" alt="twitter_logo"></a>
+                            <a href="mailto:example@gmail.com"><img src="img/gmail_logo.png" alt="gmail_logo"></a>
                         </div>
                         <p class="team_member_text">Commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</p>
                     </div>
@@ -236,9 +290,9 @@
                         </div>
                         <p class="team_member_name">KEVIN WARD</p>
                         <div class="team_member_social_media">
-                            <img src="img/facebook_logo.png" alt="facebook_logo">
-                            <img src="img/twitter_logo.png" alt="twitter_logo">
-                            <img src="img/gmail_logo.png" alt="gmail_logo">
+                            <a href="https://facebook.com"><img src="img/facebook_logo.png" alt="facebook_logo"></a>
+                            <a href="https://twitter.com"><img src="img/twitter_logo.png" alt="twitter_logo"></a>
+                            <a href="mailto:example@gmail.com"><img src="img/gmail_logo.png" alt="gmail_logo"></a>
                         </div>
                         <p class="team_member_text">Velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</p>
                     </div>
@@ -249,7 +303,7 @@
                     <img src="img/bullets.png" alt="bullets">
                 </div>
             </div>
-<!-- -----------------------------------------CONTACT----------------------------------------- -->
+            <!-- -----------------------------------------CONTACT----------------------------------------- -->
             <div id="contact">
                 <div id="contact_title">
                     <p id="contact_title_title">SAY <span class="orange">HELLO</span></p>
@@ -266,11 +320,11 @@
                     <div id="contact_form_third_row">
                         <button type="submit" id="contact_form_button">HIRE US</button>
                         <div id="contact_from_social_media">
-                            <img src="img/facebook_logo.png" alt="facebook_logo">
-                            <img src="img/twitter_logo.png" alt="twitter_logo">
-                            <img src="img/gmail_logo.png" alt="gmail_logo">
-                            <img src="img/dribbble_logo.png" alt="dribble_logo">
-                            <img src="img/behance_logo.png" alt="behance_logo">
+                            <a href="https://facebook.com"><img src="img/facebook_logo.png" alt="facebook_logo"></a>
+                            <a href="https://twitter.com"><img src="img/twitter_logo.png" alt="twitter_logo"></a>
+                            <a href="mailto:example@gmail.com"><img src="img/gmail_logo.png" alt="gmail_logo"></a>
+                            <a href="https://dribbble.com"><img src="img/dribbble_logo.png" alt="dribble_logo"></a>
+                            <a href="https://behance.net"><img src="img/behance_logo.png" alt="behance_logo"></a>
                         </div>
                     </div>
                 </form>
